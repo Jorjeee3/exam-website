@@ -132,7 +132,7 @@ ul {
 /* ----------CREATIVE----------- */
 
 .creative-section {
-    background-image: url("/images/creative.jpg") ;
+    background-image: url("images/creative.jpg") ;
     background-size: cover;
     background-position: top bottom;
     height: 100vh;
@@ -180,7 +180,7 @@ ul {
 }
 
 .about-img {
-    background-image: url("/images/about-us.jpg");
+    background-image: url("images/about-us.jpg");
     background-size: cover;
     background-position: center center;
     max-width: 380px;
@@ -286,7 +286,7 @@ ul {
 
 
 .main-services-item {
-    background-image: url("/images/services.jpg");
+    background-image: url("images/services.jpg");
     background-size: cover;
     background-position: center center;
     width: 33%;
@@ -330,7 +330,7 @@ ul {
 /* ----------RECENT----------- */
 
 .recent-section {
-    background-image: url("/images/recent-bgc.jpg");
+    background-image: url("images/recent-bgc.jpg");
     background-color: #9F9ACF;
     background-size: cover;
     background-position: center center;
@@ -535,7 +535,7 @@ ul {
 /* ----------GET-IN-TOUCH----------- */
 
 .touch-section {
-    background-image: url("/images/map-1.jpg");
+    background-image: url("images/map-1.jpg");
     background-color: rgb(159, 154, 207,);
     background-size: cover;
     background-position: center center;
