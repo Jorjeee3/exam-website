@@ -76,7 +76,7 @@ ul {
 
 .hamburger {
   top: -10px;
-  right:50%;
+  right:-20px;
   width: 40px;
   height: 4px;
   background: #FCFCFC;
@@ -96,7 +96,7 @@ ul {
 .btn-burger-menu {
     position: absolute;
     top: 50%;
-    right: -50px;
+    right: 50px;
     width: 100px;
     height: 100px;
     cursor: pointer;
@@ -755,9 +755,14 @@ ul {
         margin: 0 auto;
     }
 
+    .header-nav {
+        padding-top: 60px;
+    }
+
     .bgc-wrapper {
-        width: 800px;
-        height: 300px;
+        max-width: 1000px;
+        width: 100%;
+        height: 400px;
         background-color: rgb(0, 0, 0, 0.6);
         border-radius: 25px;
     }
@@ -814,7 +819,7 @@ ul {
     }
 
     .creative-section {
-        height: 60vh;
+        height: 80vh;
     }
 
     .creative-content {
@@ -847,6 +852,15 @@ ul {
         margin: 0;
 
     }
+
+    .servecis-list {
+        display: block;
+        width: 100%;
+    }
+
+    .main-services-item {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -855,7 +869,25 @@ ul {
         margin: 0 auto;
     }
 
+    .services-item {
+        display: block;
+        width: 100%;
+    }
+
+    .slider-item {
+        height: 400px;
+    }
    
+    .block-img {
+        height: 400px;
+    }
+
+    .recent-next-button,
+    .recent-previous-button,
+    .member-next-button,
+    .member-previous-button {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -865,12 +897,22 @@ ul {
     }
 
     .creative-content {
-        padding-top: 110px;
+        padding-top: 160px;
     }
 
     .creative-title { 
         font-size: 36px;
     }
 
+    .hamburger {
+        top: -10px;
+        right:-30px;
+        width: 40px;
+        height: 4px;
+        background: #FCFCFC;
+        position: absolute;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+        transition: 0.5s;
+    }
    
 }
