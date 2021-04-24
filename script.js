@@ -29,6 +29,15 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow:  $(".recent-previous-button"),
         nextArrow: $(".recent-next-button"),
+        responsive: [
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                }
+            }
+        ]
     });
 
 });
@@ -53,6 +62,13 @@ $(document).ready(function () {
                 breakpoint: 800,
                 settings: {
                     slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 430,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
                 }
             }
         ]

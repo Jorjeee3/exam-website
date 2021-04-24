@@ -806,6 +806,10 @@ ul {
         height: 80vh;
     }
 
+    .form-input {
+        width: 45%;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -861,6 +865,10 @@ ul {
     .main-services-item {
         width: 100%;
     }
+
+    .form-input {
+        width: 44%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -874,12 +882,20 @@ ul {
         width: 100%;
     }
 
+    .recent-section {
+        height: 100vh;
+    }
+
     .slider-item {
-        height: 400px;
+        height: 300px;
     }
    
     .block-img {
-        height: 400px;
+        height: 300px;
+    }
+
+    .slick-dots {
+        margin-top: 24px;
     }
 
     .recent-next-button,
@@ -887,6 +903,27 @@ ul {
     .member-next-button,
     .member-previous-button {
         display: none;
+    }
+
+    .slick-arrow {
+        display: none;
+    }
+
+    .social-item {
+        padding: 5px;
+    }
+
+    .touch-title {
+        margin-bottom: 100px;
+    }
+
+    .form-input {
+        display: block;
+        width: 100%;
+    }
+
+    .bottom-area {
+        margin-bottom: 27px;
     }
 }
 
