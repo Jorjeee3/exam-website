@@ -26,12 +26,17 @@ $(document).ready(function () {
 const burgerButton = document.querySelector(".btn-burger-menu");
 const headerList = document.querySelector(".header-nav");
 const body = document.querySelector("body");
+const headerLinkItem = document.querySelectorAll(".header-link-item");
 
 burgerButton.addEventListener('click', () => {
     headerList.classList.toggle('show-burger')
 });
 
 burgerButton.addEventListener('click', () => {
+    body.classList.toggle('wrapper-body')
+});
+
+headerLinkItem.addEventListener('click', () => {
     body.classList.toggle('wrapper-body')
 });
 
