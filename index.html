@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <!-- <script src="/__/firebase/init.js"></script>  -->
 </head>
 <body>
 
@@ -27,16 +30,16 @@
                                 <a href="/" class="header-link-item">Home</a>
                             </li>
                             <li class="list-item">
-                                <a href="" class="header-link-item">About</a>
+                                <a href="#about-section" class="header-link-item">About</a>
                             </li>
                             <li class="list-item">
-                                <a href="" class="header-link-item">Services</a>
+                                <a href="#services-section" class="header-link-item">Services</a>
                             </li>
                             <li class="list-item">
-                                <a href="" class="header-link-item">Works</a>
+                                <a href="#section-our-team" class="header-link-item">Works</a>
                             </li>
                             <li class="list-item">
-                                <a href="" class="header-link-item">Contact</a>
+                                <a href="#touch-section" class="header-link-item">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -68,7 +71,7 @@
             </div>
         </section>
         
-        <section class="about-section">
+        <section class="about-section" id="about-section">
             <div class="container">
                 <div class="adout-content">
                     <div class="about-img">
@@ -100,7 +103,7 @@
             </div>
         </section>
 
-        <section class="services-section">
+        <section class="services-section" id="services-section">
             <div class="container">
                 <div class="services-block">
                     <ul class="servecis-list">
@@ -165,7 +168,7 @@
             </div>
         </section> 
 
-        <section class="recent-section">
+        <section class="recent-section" id="recent-section">
             <div class="opacity-wrapper">
                 <div class="container">
 
@@ -215,7 +218,7 @@
             </div>
         </section>
 
-        <section class="section-our-team">
+        <section class="section-our-team" id="section-our-team"> 
             <div class="container">
 
                <div class="header-team">
@@ -468,7 +471,7 @@
             </div>
         </section>
 
-        <section class="touch-section">
+        <section class="touch-section" id="touch-section">
             <div class="touch-wrapper-section">
                 <div class="container">
                     <div class="touch-header">
@@ -501,18 +504,18 @@
                     </div> -->
 
 
-                    <form action="#" method="GET" class="touch-form">
-                        <label for="" class="label-input">
+                    <form action="#" method="GET" class="touch-form" id="contactForm">
+                        <label class="label-input">
                             <input type="text" name="username" placeholder="Your name"
-                            minlength="3" maxlength="12" class="form-input input-area">
+                            minlength="3" maxlength="12" class="form-input input-area" id="userName">
                         </label>
 
-                        <label for="" class="label-input1">
-                            <input type="email" name="email" placeholder="Your email" class="form-input bottom-area">
+                        <label class="label-input1">
+                            <input type="email" name="email" placeholder="Your email" class="form-input bottom-area" id="userEmail">
                         </label>
 
-                        <label for="" class="label-textarea">
-                            <textarea name="text" placeholder="Your messege" cols="87" rows="10" class="textarea" aria-colcount="textarea"></textarea>
+                        <label class="label-textarea">
+                            <textarea name="text" placeholder="Your message" cols="87" rows="10" class="textarea" aria-colcount="textarea" id="userMessage"></textarea>
                         </label>
                         <button type="submit" class="form-button">SEND MESSAGE</button>
                     </form>
@@ -531,7 +534,9 @@
         type="text/javascript"
         src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
     </script>
+    
     <script
+        type="text/javascript"
         src="script.js">
     </script>
 

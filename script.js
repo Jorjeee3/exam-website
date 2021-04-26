@@ -1,3 +1,20 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyDS1kfHDlu9JjGaYzm5toIyrlOWVonsGVw",
+    authDomain: "website-exam.firebaseapp.com",
+    databaseURL: "https://website-exam-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "website-exam",
+    storageBucket: "website-exam.appspot.com",
+    messagingSenderId: "794487191558",
+    appId: "1:794487191558:web:81d1831494b2855283eb87"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+firebase.firestore().collection("contacts").add({
+ 
+});
+
+
 $(document).ready(function () {
     
   $('.btn-burger-menu').click(function() {
@@ -76,4 +93,38 @@ $(document).ready(function () {
 
 });
 
+// // form summit 
 
+document.querySelector('#contactForm').addEventListener('submit', submitForm);
+
+function submitForm(even) {
+    even.preventDefault();
+    
+    const userName = getInputValue('userName');
+    const userEmail = getInputValue('userEmail');
+    const userMessage = getInputValue('userMessage');
+
+    saveMessage(userName, userEmail, userMessage)
+
+}
+
+function getInputValue(id) {
+    return document.getElementById(id).value;
+}
+
+// // save message to firebase
+
+// function saveMessage(userName, userEmail, userMessage) {
+//     const newMessageRef = messagesRef.push();
+//     newMessageRef.set({
+//         name: userName,
+//         email: userEmail,
+//         message: userMessage
+//     });
+// }
+
+
+
+const label = document.querySelector(".label-input1")
+
+console.log(label.nextElementSibling)

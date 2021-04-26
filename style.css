@@ -102,6 +102,10 @@ ul {
     cursor: pointer;
 }
 
+.btn-burger-menu:active {
+    background-color: rgb(243, 243, 243, 0);
+}
+
 .burger-menu:before,
 .burger-menu:after {
   content: '';
