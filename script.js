@@ -15,33 +15,22 @@ firebase.firestore().collection("contacts").add({
 });
 
 
-$(document).ready(function () {
-    
-  $('.btn-burger-menu').click(function() {
-      $('.btn-burger-menu').toggleClass('active-one');
-  });
-    
-})
-
 const burgerButton = document.querySelector(".btn-burger-menu");
 const headerList = document.querySelector(".header-nav");
 const body = document.querySelector("body");
 const headerLinkItem = document.querySelectorAll(".header-link-item");
 
-burgerButton.addEventListener('click', () => {
-    headerList.classList.toggle('show-burger')
-});
 
-burgerButton.addEventListener('click', () => {
-    body.classList.toggle('wrapper-body')
-});
+    $('.btn-burger-menu').on('click', function () {
+        $('.header-nav').toggleClass('show-burger');
+        $('body').toggleClass('wrapper-body');
+    });
 
-headerLinkItem.addEventListener('click', () => {
-    body.classList.toggle('wrapper-body')
-});
-
-
-
+   $('.header-link-item').on('click', function () {
+       $('body').removeClass('wrapper-body');
+       $('.header-nav').removeClass('show-burger');
+    });
+  
 
 $(document).ready(function () {
     
@@ -133,3 +122,5 @@ function getInputValue(id) {
 const label = document.querySelector(".label-input1")
 
 console.log(label.nextElementSibling)
+
+
