@@ -433,14 +433,15 @@ ul {
     border: 3px solid rgba(255, 255, 255,);
 }
 
-.slick-active {
+/* .slick-active {
     opacity: 0.8;
-}
+} */
 
 .maks {
     overflow: hidden;
-    height: 240px;
-    width: 240px;
+    max-height: 240px;
+    max-width: 240px;
+    width: 100%;
     border-radius: 50%;
     border: 10px solid #EBEBEB;
     margin: 0 auto;
