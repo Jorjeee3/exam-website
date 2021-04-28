@@ -13,9 +13,6 @@ const firebaseConfig = {
 
   let contactInfo = firebase.database().ref("contacts");
 
-// firebase.firestore().collection("contacts").add({
- 
-// });
 
 document.querySelector('#contactForm').addEventListener('submit', submitForm);
 
@@ -113,21 +110,6 @@ $(document).ready(function () {
     });
 
 });
-
-// // form summit 
-
-
-
-// // save message to firebase
-
-// function saveMessage(userName, userEmail, userMessage) {
-//     const newMessageRef = messagesRef.push();
-//     newMessageRef.set({
-//         name: userName,
-//         email: userEmail,
-//         message: userMessage
-//     });
-// }
 
 
 

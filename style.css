@@ -404,7 +404,7 @@ ul {
     left: 0;
 }
 
-.recent-content .slick-dots {
+.slick-dots {
     font-size: 0;
     margin-top: 46px;
 }
@@ -426,11 +426,24 @@ ul {
     border: 3px solid rgba(255, 255, 255,);
 }
 
-.recent-content .slick-dots button:focus{
+.recent-content .slick-dots button:active{
     border: 0;
     outline: none;
     background-color: #fff;
     border: 3px solid rgba(255, 255, 255,);
+}
+
+.slick-active {
+    opacity: 0.8;
+}
+
+.maks {
+    overflow: hidden;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    border: 10px solid #EBEBEB;
+    margin: 0 auto;
 }
 
 .recent-button {
