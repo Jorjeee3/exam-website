@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <!-- <script src="/__/firebase/init.js"></script>  -->
 </head>
 <body>
@@ -76,7 +74,7 @@
                 <div class="adout-content">
                     <div class="about-img">
                         <div class="about-wrapper">
-                            <img src="images/Icon-AboutUs.svg" alt="" class="about-icon">
+                            <img src="images/Icon-AboutUs.svg" alt="Icon-AboutUs" class="about-icon">
                             <h2 class="about-title">ABOUT US</h2>
                         </div>
                     </div>
@@ -108,7 +106,7 @@
                 <div class="services-block">
                     <ul class="servecis-list">
                         <li class="services-item item-gray-color">
-                            <img src="images/Icon-Graphic.svg" alt="" class="services-icon">
+                            <img src="images/Icon-Graphic.svg" alt="Icon-Graphic" class="services-icon">
                             <h3 class="services-subtitle">
                                 GRAPHIC DESIGN
                             </h3>
@@ -118,7 +116,7 @@
                             </span>
                         </li>
                         <li class="services-item">
-                            <img src="images/Icon-Web.svg" alt="" class="services-icon">
+                            <img src="images/Icon-Web.svg" alt="Icon-Web" class="services-icon">
                             <h3 class="services-subtitle">
                                 WEB DEVELOPMENT
                             </h3>
@@ -128,7 +126,7 @@
                             </span>
                         </li>
                         <li class="services-item">
-                            <img src="images/Icon-SEO.svg" alt="" class="services-icon">
+                            <img src="images/Icon-SEO.svg" alt="Icon-SEO" class="services-icon">
                             <h3 class="services-subtitle">
                                 SEO & MARKETING
                             </h3>
@@ -138,7 +136,7 @@
                             </span>
                         </li>
                         <li class="services-item item-gray-color">
-                            <img src="images/Icon-Mobile.svg" alt="" class="services-icon">
+                            <img src="images/Icon-Mobile.svg" alt="Icon-Mobile" class="services-icon">
                             <h3 class="services-subtitle">
                                 MOBILE DEVELOPMENT
                             </h3>
@@ -152,7 +150,7 @@
                     <div class="main-services-item">
                         <div class="services-wrapper">
                             <div class="services-block">
-                                <img src="images/Icon-Services.svg" alt="" class="services-main-icon">
+                                <img src="images/Icon-Services.svg" alt="Icon-Services" class="services-main-icon">
                                 <h2 class="services-title">
                                     OUR SERVICES
                                 </h2>
@@ -214,6 +212,7 @@
 
                         <button class="recent-button">View Gallery</button>
                    </div>
+
                 </div>
             </div>
         </section>
@@ -222,7 +221,7 @@
             <div class="container">
 
                <div class="header-team">
-                    <img src="images/Icon-Team.svg" alt="" class="team-logo">
+                    <img src="images/Icon-Team.svg" alt="Icon-Team" class="team-logo">
                     <h2 class="our-team-title">MEET OUR TEAM</h2>
                </div>
 
@@ -498,7 +497,9 @@
                             </div>
 
                             <div class="touch-phone-content">
-                                +380937892371
+                                <a href="tel:+380935277097" class="touch-phone-number">
+                                    +380935277097
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -533,27 +534,31 @@
 
 
     <footer class="footer">
-        <div class="footer-block-text">
-            <span class="footer-text">©2014 tulusdriyo. All Rights Reserved.</span>
-        </div>
-
-        <div class="footer-links">
-            <a href="https://www.behance.net/" class="footer-item-link">
-                <img src="images/behance.svg" alt="Icon" class="footer-item-icon">
-            </a>
-            <a href="https://www.linkedin.com/" class="footer-item-link">
-                <img src="images/linked-in.svg" alt="Icon" class="footer-item-icon">
-            </a>
-            <a href="https://www.google.com" class="footer-item-link">
-                <img src="images/google+.svg" alt="Icon" class="footer-item-icon">
-            </a>
-            <a href="https://www.facebook.com/" class="footer-item-link">
-                <img src="images/facebook.svg" alt="Icon" class="footer-item-icon">
-            </a>
-            <a href="https://twitter.com/" class="footer-item-link">
-                <img src="images/twitter.svg" alt="Icon" class="footer-item-icon">
-            </a>
-        </div>
+       <div class="container">
+           <div class="footer-content">
+                <div class="footer-block-text">
+                    <span class="footer-text">©2014 <strong>tulus</strong>driyo. All Rights Reserved.</span>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://www.behance.net/" class="footer-item-link">
+                        <img src="images/behance.svg" alt="Icon" class="footer-item-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/" class="footer-item-link">
+                        <img src="images/linked-in.svg" alt="Icon" class="footer-item-icon">
+                    </a>
+                    <a href="https://www.google.com" class="footer-item-link">
+                        <img src="images/google+.svg" alt="Icon" class="footer-item-icon">
+                    </a>
+                    <a href="https://www.facebook.com/" class="footer-item-link">
+                        <img src="images/facebook.svg" alt="Icon" class="footer-item-icon">
+                    </a>
+                    <a href="https://twitter.com/" class="footer-item-link">
+                        <img src="images/twitter.svg" alt="Icon" class="footer-item-icon">
+                    </a>
+                </div>
+           </div>
+       </div>
     </footer>
 
     <script 
@@ -563,7 +568,8 @@
         type="text/javascript"
         src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
     </script>
-    
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
     <script
         type="text/javascript"
         src="script.js">

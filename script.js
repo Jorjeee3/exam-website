@@ -10,9 +10,44 @@ const firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
-firebase.firestore().collection("contacts").add({
+
+  let contactInfo = firebase.database().ref("contacts");
+
+// firebase.firestore().collection("contacts").add({
  
-});
+// });
+
+document.querySelector('#contactForm').addEventListener('submit', submitForm);
+
+function submitForm(even) {
+    even.preventDefault();
+
+    let name = document.querySelector("#userName").value;
+    let email = document.querySelector("#userEmail").value;
+    let message = document.querySelector("#userMessage").value;     
+
+    console.log(name, email, message)
+    
+    saveContactForm(name, email, message)
+
+    document.querySelector("#contactForm").reset();
+}
+
+function saveContactForm(name, email, message) {
+    let newContactInfo = contactInfo.push();
+
+    newContactInfo.set({
+        user_name: name,
+        user_email: email,
+        user_message: message, 
+    })
+}
+
+
+function getInputValue(id) {
+    return document.getElementById(id).value;
+}
+
 
 
 const burgerButton = document.querySelector(".btn-burger-menu");
@@ -89,22 +124,7 @@ $(document).ready(function () {
 
 // // form summit 
 
-document.querySelector('#contactForm').addEventListener('submit', submitForm);
 
-function submitForm(even) {
-    even.preventDefault();
-    
-    const userName = getInputValue('userName');
-    const userEmail = getInputValue('userEmail');
-    const userMessage = getInputValue('userMessage');
-
-    saveMessage(userName, userEmail, userMessage)
-
-}
-
-function getInputValue(id) {
-    return document.getElementById(id).value;
-}
 
 // // save message to firebase
 
@@ -119,8 +139,38 @@ function getInputValue(id) {
 
 
 
-const label = document.querySelector(".label-input1")
 
-console.log(label.nextElementSibling)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
