@@ -19,16 +19,14 @@ const firebaseConfig = {
 
 document.querySelector('#contactForm').addEventListener('submit', submitForm);
 
-function submitForm(even) {
-    even.preventDefault();
+function submitForm(event) {
+    event.preventDefault();
 
     let name = document.querySelector("#userName").value;
     let email = document.querySelector("#userEmail").value;
     let message = document.querySelector("#userMessage").value;     
 
-    console.log(name, email, message)
-    
-    saveContactForm(name, email, message)
+    saveContactForm(name, email, message);
 
     document.querySelector("#contactForm").reset();
 }
@@ -42,12 +40,6 @@ function saveContactForm(name, email, message) {
         user_message: message, 
     })
 }
-
-
-function getInputValue(id) {
-    return document.getElementById(id).value;
-}
-
 
 
 const burgerButton = document.querySelector(".btn-burger-menu");
